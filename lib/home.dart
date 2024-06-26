@@ -19,6 +19,11 @@ class _MyHomePageState extends State<MyHomePage> {
   //FlutterBlue flutterBlue = FlutterBluePlus;
   List<BluetoothDevice> devices = [];
 
+  Future<void> connectToDevice(BluetoothDevice device) async {
+    await device.connect();
+    // Once connected, you can perform operations on the device.
+  }
+
   void startScan() async{
     await FlutterBluePlus.startScan();
     print('ça charge');
@@ -52,6 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
           itemBuilder: (BuildContext context, int index){
             return ListTile(
               title: Text(devices[index].remoteId.toString()),
+              onTap: (){
+                connectToDevice(devices[index]);
+              },
               //subtitle: Text(devices[index].toString()),
             );
           }
