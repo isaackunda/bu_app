@@ -59,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Text(devices[index].remoteId.toString()),
               onTap: (){
                 connectToDevice(devices[index]);
+                print('Connerter');
               },
               //subtitle: Text(devices[index].toString()),
             );
