@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
           itemBuilder: (BuildContext context, int index){
             return ListTile(
               title: Text(devices[index].remoteId.toString()),
-              subtitle: Text(devices[index].toString()),
+              //subtitle: Text(devices[index].toString()),
             );
           }
       ), // This trailing comma makes auto-formatting nicer for build methods.
