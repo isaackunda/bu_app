@@ -6,3 +6,5 @@ https://github.com/isaackunda/bu_app/blob/main/Screenshot_20240626-124047%5B1%5D
 
 Ensuite vous aurez accées à une liste d'appareil bluetoth à proximiré
 https://github.com/isaackunda/bu_app/blob/main/Screenshot_20240626-124101%5B1%5D.jpg
+
+Ps: il est recommandé de tester l'application directement sur son Android par sur un emulateur 
